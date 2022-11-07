@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Телефонная книга</title>
+</head>
+<body>
+    <div class="container">
+        <div class="contacts" >
+            <div class="header">
+                <div class="header__img">
+                    <img src="img/phone.svg" alt="">
+                </div>
+                <div class="header__inner">
+                    <img src="img/search.svg" alt="">
+                    <input class="header__search" type="text" id="search" placeholder="Поиск">
+                </div>
+            </div>
+            <div class="contacts__list contactlist">
+                <div class="contacts__nothing none">
+                    Ничего не найдено
+                </div>
+            </div>
+            
+            <button class="btn" id="addcontactbtn">
+                Добавить
+            </button>
+        </div>
+
+        <div class="addcontact none">
+            <div class="addcontact__header header">
+                <div class="header__img">
+                    <img src="img/phone.svg" alt="">
+                </div>
+                <div class="header__inner header__inner--addcontact">
+                    <h2>Добавление контакта</h2>
+                    <button id="closebtn">Назад</button>
+                </div>
+            </div>
+
+
+            <form class="addcontact__form">
+                <div class="addcontact__main">
+                    <label for="name">Имя:</label>
+                    <input class="addcontact__input" id="name" type="text" placeholder="ФИО" required>
+                    <label for="phone">Номер телефона:</label>
+                    <input class="addcontact__input" id="phone" type="text" placeholder="8(___)___-___-__" required>
+                    <div class="addcontact__favorite">
+                        <input type="checkbox" id="favorite">
+                        <label for="favorite">Добавить в избранное</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn--add" id="createbtn">
+                    Создать контакт
+                </button>
+            </form>
+
+        </div>
+    </div>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="main.js"></script>
+    
+</body>
+</html>

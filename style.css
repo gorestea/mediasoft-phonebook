@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+}
+
+
+
+.container {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px 5px;
+}
+
+.none {
+    display: none !important;
+}
+
+/* header */
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.header__img {
+    width: 25px;
+    margin-right: 25px;
+}
+
+.header__inner {
+    display: flex;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.header__search {
+    width: 100%;
+}
+
+.header__inner--addcontact {
+    justify-content: space-between;
+    padding: 0;
+    border: none;
+    font-size: 15px;
+}
+
+.header__inner--addcontact button {
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.header__inner img {
+    width: 15px;
+    margin-right: 10px;
+}
+
+/* contacts */
+
+.contacts {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 0px;
+}
+
+.contactlist__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+
+.contactlist__img {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+}
+
+.contactlist__content {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.contactlist__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactlist__name {
+    font-size: 22px;
+    margin-bottom: 7px;
+}
+
+.contactlist__phone {
+    font-size: 18px;
+}
+
+.contactlist__btns {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactlist__btn {
+    margin-bottom: 5px;
+}
+
+
+.contacts__item-empty {
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    font-size: 35px;
+    border-bottom: 1px solid black;
+}
+
+.contacts__item-empty img {
+    margin-top: 50px;
+    width: 70px;
+    height: 70px;
+}
+
+.contacts__nothing {
+    padding: 100px 50px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+
+.addcontact {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.addcontact__main {
+    padding: 15px 10px;
+}
+
+.addcontact label {
+    display: block;
+}
+
+.addcontact__input {
+    margin: 10px 0;
+    border: 1px solid black;
+    padding: 5px;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.addcontact__favorite {
+    display: flex;
+    align-items: center;
+}
+
+.addcontact__favorite input {
+    width: 15px;
+    height: 15px;
+}
+
+.addcontact__favorite label {
+    margin-left: 10px;
+}
+
+/* btn */
+
+
+.btn {
+    width: 100%;
+    padding: 25px 0;
+    background-color: white;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+.btn--add {
+    border-top: 1px solid black;
+}
+
+.change-btn {
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+
+    cursor: pointer;
+}
+
+
+.change-btn img {
+    width: 25px;
+    height: 25px;
+    pointer-events: none;
+}
+
+
+.change-btn--favorite {
+    background-color: rgb(126, 126, 126);
+}
+
+
